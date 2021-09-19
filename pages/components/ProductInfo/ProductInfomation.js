@@ -3,13 +3,13 @@ import OptionsSelector from "./OptionsSelector";
 function ProductInfomation({ data }) {
   console.log(data);
   return (
-    <div className="pl-5 pt-5">
+    <div className="px-5 pt-5">
       <div>
         <h1 className="text-2xl font-sans">{data.title}</h1>
         <p>
           {`$${data.priceRange.maxVariantPrice.amount} ${data.priceRange.maxVariantPrice.currencyCode}`}
         </p>
-        <p className="mt-4 text-l">{data.description}</p>
+        <p className="mt-4">{data.description}</p>
       </div>
       {data.options.map((option, index) => (
         <OptionsSelector options={option} key={index}></OptionsSelector>

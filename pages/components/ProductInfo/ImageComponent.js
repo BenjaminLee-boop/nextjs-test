@@ -12,7 +12,7 @@ export default function ImageComponent({ images }) {
           src={image}
           id="main-image"
         />
-        <div className="flex flex-row flex-wrap w-auto gap-2 p-1 px-36">
+        <div className="flex flex-col sm:flex-row  flex-wrap w-auto gap-2 p-1 px-36">
           {images.map((img, index) => (
             <img
               className="object-scale-down max-h-24 h-auto w-auto cursor-pointer select-none"
