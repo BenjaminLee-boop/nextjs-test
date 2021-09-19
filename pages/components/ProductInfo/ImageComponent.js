@@ -29,7 +29,7 @@ export default function ImageComponent({ images }) {
   }
   return (
     <div className="flex flex-col">
-      <img className=" h-2/4 w-full" src={images[0].node.originalSrc} />
+      <img className="object-scale-down max-h-96 h-auto w-full" src={images[0].node.originalSrc} />
     </div>
   );
 }
